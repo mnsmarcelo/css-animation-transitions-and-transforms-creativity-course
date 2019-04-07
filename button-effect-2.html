@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+            color: #351435;
+            font-family: sans-serif;
+            font-size: 40px;
+            border: 3px solid #351435;
+            padding: 40px 80px;
+            position: relative;
+            overflow: hidden;
+            transition: all 1s;
+        }
+        a:before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #351435;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            transform: translateX(-100%);
+            transition: all 1s;
+        }
+        a:hover {
+            color: #FFF;
+        }
+        a:hover:before {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <a href="">Hover me</a>
+</body>
+</html>

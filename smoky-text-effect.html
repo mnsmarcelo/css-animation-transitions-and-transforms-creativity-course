@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3b3b3b;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        ul li {
+            list-style: none;
+            color: white;
+            font-size: 100px;
+            font-weight: bold;
+            letter-spacing: 10px;
+            transition: 2s;
+        }
+        ul:hover li {
+            transform: rotate(45deg) translateY(-200px);
+            opacity: 0;
+            filter: blur(20px);
+        }
+        li:nth-child(1) {
+            transition-delay: 0;
+        }
+        li:nth-child(2) {
+            transition-delay: 0.4s;
+        }
+        li:nth-child(3) {
+            transition-delay: 0.8s;
+        }
+        li:nth-child(4) {
+            transition-delay: 1.2s;
+        }
+        li:nth-child(5) {
+            transition-delay: 1.6s;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>S</li>
+        <li>M</li>
+        <li>O</li>
+        <li>K</li>
+        <li>Y</li>
+    </ul>
+
+</body>
+</html>

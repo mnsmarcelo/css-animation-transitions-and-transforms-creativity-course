@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+            transition: all 0.5s;
+        }
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 30%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: all 0.5s;
+            background-color: black;
+            transform: translateY(100%);
+        }
+        .caption h1 {
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .caption p {
+            font-size: 19px;
+            text-transform: capitalize;
+        }
+        .container:hover .caption {
+            transform: translateY(0);
+        }
+        .container:hover img {
+            transform: translateY(-30%);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="foto.jpg" />
+    <div class="caption">
+        <h1>Amazing caption</h1>
+        <p>you can write anything you want here!</p>
+    </div>
+</div>
+</body>
+</html>

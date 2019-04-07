@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            perspective: 300px;
+        }
+        .foto {
+            width: 300px;
+            display: block;
+            margin: auto;
+            margin-top: 200px;
+            transition: transform 1s;
+            transform-origin: 30% 80%;
+        }
+        .foto:hover {
+            /* transform: rotate(-60grad) scale(2); */
+            /* transform: skew(5deg, 5deg); */
+            /* transform: rotate(45deg) ;*/
+            /* transform: translateZ(100px) ;*/
+            transform: rotateY(60deg);
+        }
+    </style>
+</head>
+<body>
+<img src="foto.jpg" class="foto">
+</body>
+</html>
